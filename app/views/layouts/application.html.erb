@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Average Temperature</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1>Current Temperature</h1>
+	<div class = "content">
+		<p>Enter a zip code to find that location's current temperature averaged from two separate sources.</p>
+		<%= yield %>
+	</div>
+</body>
+</html>
